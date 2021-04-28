@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314258009807",
+    "project_id": "wisesaying-db33e",
+    "storage_bucket": "wisesaying-db33e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314258009807:android:8d2ca18f10a8fab676d1ba",
+        "android_client_info": {
+          "package_name": "com.jinny.wisesaying"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314258009807-140t4eh98c1624e8dq4pbrbtp25iq7ie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs_t_jnSXB0Ed7YvWpo0NfJecaz45jELM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314258009807-140t4eh98c1624e8dq4pbrbtp25iq7ie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
