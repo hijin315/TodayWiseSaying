@@ -13,21 +13,22 @@ class QuotePageAdapter(private val quotes: List<Quote>, private val isNameShow: 
     )
 
     override fun onBindViewHolder(holder: QuoteViewHolder, position: Int) {
-        holder.bind(quotes[position], isNameShow)
+        val actualPosition = position % quotes.size
+        holder.bind(quotes[actualPosition], isNameShow)
     }
 
-    override fun getItemCount() = quotes.size
+    override fun getItemCount() = Int.MAX_VALUE
 
     class QuoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val quoteTextView: TextView = itemView.findViewById(R.id.quoteTextView)
         private val nameTextView: TextView = itemView.findViewById(R.id.nameTextView)
 
         fun bind(quote: Quote, isNameShow: Boolean) {
-            quoteTextView.text = quote.quote
+            quoteTextView.text = "\"${quote.quote}\""
             if (isNameShow) {
-                nameTextView.text = quote.name
+                nameTextView.text = "- ${quote.name}"
                 nameTextView.visibility = View.VISIBLE
-            }else{
+            } else {
                 nameTextView.visibility = View.GONE
             }
         }
